@@ -19,14 +19,19 @@
   <div id="mainContainer">
    <h1>Contact Us</h1> 
 <form action="">
+    <div class="nameContainer">
+      <div class="firstNameContainer">
   <label for="">First Name</label>
-  <div class="nameContainer">
-      <label for="">Last Name</label>
-  <input type="text">
-  <div class="errorMsg">This field is required</div>
-
     <input type="text">
-  <div class="errorMsg">This field is required</div>
+      <div class="errorMsg">This field is required</div>
+</div>
+      <div class="lastNameContainer">
+      <label for="">Last Name</label>
+          <input type="text">
+<div class="errorMsg">This field is required</div>
+</div>
+
+
   </div>
   <div class="emailContainer">
       Email Address
@@ -34,15 +39,18 @@
   Please enter a valid email address
   This field is required
   </div>
-
- <div class="queryTypeContainer">
     <p>Query Type</p> 
-   General Enquiry
+ <div id="queryTypeContainer">
+  <div class="generalEContainer">
+   <span>General Enquiry</span> 
   <input type="checkbox" name="General Enquiry" id="generalE">
-   Support Request
+  </div>
+    <div class="generalSContainer">
+<span>   Support Request</span>
   <input type="checkbox" name="Support Request" id="supportR">
- 
-  Please select a query type
+ </div>
+ <div class="errorMsg">Please select a query type</div>
+  
  </div>
 
 
@@ -53,7 +61,7 @@
 
   To submit this form, please consent to being contacted
 
-  Submit  
+ <button>Submit</button> 
 </div>
 </form>
   Message Sent!

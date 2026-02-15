@@ -35,13 +35,58 @@ main {
     border: 1px sold var(--White);
     border-radius: 1rem;
 }
-.nameContainer{
+.nameContainer {
     display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+#queryTypeContainer {
+    display: flex;
+}
+.generalSContainer, .generalEContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    border: 1px solid var(--Green600);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    width: 100%;
+    gap: 1rem;
+}
+span{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
+.firstNameContainer, .lastNameContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 .errorMsg {
     display: none;
 }
-input {
-    width: 10rem;
+input[type="checkbox"] {
+    border-radius: 50%;
+    outline: 1px solid #1e5180;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    background-color: pink;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    border: 1px solid var(--Green600);
+    border-radius: 0.5rem;
+    padding: 0.5rem; 
+}
+
+button {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--Green600);
+    color: var(--White);
 }
