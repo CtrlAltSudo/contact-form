@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,35 +15,50 @@
   </style>
 </head>
 <body>
+<main>
+  <div id="mainContainer">
+   <h1>Contact Us</h1> 
+<form action="">
+  <label for="">First Name</label>
+  <div class="nameContainer">
+      <label for="">Last Name</label>
+  <input type="text">
+  <div class="errorMsg">This field is required</div>
 
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
+    <input type="text">
+  <div class="errorMsg">This field is required</div>
+  </div>
+  <div class="emailContainer">
+      Email Address
+      <input type="email">
   Please enter a valid email address
   This field is required
+  </div>
 
-  Query Type
-  General Enquiry
-  Support Request
+ <div class="queryTypeContainer">
+    <p>Query Type</p> 
+   General Enquiry
+  <input type="checkbox" name="General Enquiry" id="generalE">
+   Support Request
+  <input type="checkbox" name="Support Request" id="supportR">
+ 
   Please select a query type
+ </div>
+
 
   Message
   This field is required
 
   I consent to being contacted by the team
+
   To submit this form, please consent to being contacted
 
-  Submit
-
+  Submit  
+</div>
+</form>
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
-  
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
