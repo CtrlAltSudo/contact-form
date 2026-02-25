@@ -29,7 +29,7 @@ main {
 #mainContainer {
     display: flex;
     flex-direction: column;
-    height: 35rem;
+    height: 40rem;
     max-width: 35rem;
     padding: 2rem;
     background-color: var(--White);
@@ -75,6 +75,9 @@ span{
     resize: none;
     border: 1px solid var(--Green600);
 }
+#consentCheck {
+    border-radius: 0;
+}
 input[type="checkbox"] {
     border-radius: 50%;
     outline: 1px solid #1e5180;
@@ -83,6 +86,10 @@ input[type="checkbox"] {
     height: 15px;
     cursor: pointer;
 }
+
+
+
+
 input[type="checkbox"]:checked {
     background-color: pink;
 }
@@ -93,9 +100,21 @@ input[type="text"], input[type="email"] {
     padding: 0.5rem; 
 }
 
+.consentContainer {
+    margin-top: 2rem;
+}
+
 button {
+    margin-top: 2rem;
     padding: 1rem;
     width: 100%;
     background-color: var(--Green600);
     color: var(--White);
+}
+h2 {
+    font-size: 1rem;
+      font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }

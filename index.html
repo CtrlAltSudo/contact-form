@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Contact form</title>
@@ -34,33 +36,38 @@
 
   </div>
   <div class="emailContainer">
-      Email Address
+      <h2>Email Address <span>*</span></h2>
       <input type="email">
   Please enter a valid email address
   This field is required
   </div>
-    <p>Query Type</p> 
+    <h2>Query Type <span>*</span></h2> 
  <div id="queryTypeContainer">
   <div class="generalEContainer">
    <span>General Enquiry</span> 
   <input type="checkbox" name="General Enquiry" id="generalE">
   </div>
     <div class="generalSContainer">
-<span>   Support Request</span>
+<span>   Support Request </span>
   <input type="checkbox" name="Support Request" id="supportR">
  </div>
  <div class="errorMsg">Please select a query type</div>
-  
  </div>
-
-
-  Message
+  <h2>Message <span>*</span></h2>
 <textarea class="messageBox" cols="30" rows="10"></textarea>
-  This field is required
+  <div class="errorMsg">
+    This field is required
+  </div>
 
-  I consent to being contacted by the team
+  <div class="consentContainer">
+      <input type="checkbox" name="consentCheck" id="consentCheck">
+  I consent to being contacted by the team <span>*</span>
+  </div>
 
-  To submit this form, please consent to being contacted
+
+  <div class="errorMsg">
+To submit this form, please consent to being contacted
+  </div>
 
  <button>Submit</button> 
 </div>
