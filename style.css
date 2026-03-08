@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 :root {
@@ -88,8 +91,6 @@ input[type="checkbox"] {
 }
 
 
-
-
 input[type="checkbox"]:checked {
     background-color: pink;
 }
@@ -113,8 +114,5 @@ button {
 }
 h2 {
     font-size: 1rem;
-      font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
+font-weight: 200;
 }
