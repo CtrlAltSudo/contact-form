@@ -27,13 +27,13 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 50%;
+
 }
 #mainContainer {
     display: flex;
     flex-direction: column;
     height: 40rem;
-    max-width: 35rem;
+    min-width: 35rem;
     padding: 2rem;
     background-color: var(--White);
     border: 1px sold var(--White);
